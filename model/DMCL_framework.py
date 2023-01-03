@@ -4,7 +4,7 @@ from model.sim_framework import CosineSimilarity,SimcseLearningModule
 from model.model_baseline_finetune import UniModelFinetune
 
 
-class Momentum_contrastive_frame(nn.Module):
+class Debiased_Momentum_contrastive_frame(nn.Module):
     def __init__(self,args,device, pretrained_dict, model):
         super(Momentum_contrastive_frame, self).__init__()
         self.encoder = model
